@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Dongle:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="weather.css">
+    <title>weather App</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="weatherapp">
+            <div class="left">
+                <nav>
+                    <div><i class="fas fa-plus-square"></i></div>
+
+                    <div>
+                        <span>°C</span>
+                        <input type="range" id="cf" value="0" max="1">
+                        <span>°F</span>
+                    </div>
+                </nav>
+                <div id="leftdatabox">
+                    <div id="leftdata-container">
+                        <div class="leftdata">
+                            <div>
+                                <span class="material-symbols-outlined">
+                                    near_me
+                                </span>
+                                <h2>New York, USA</h2>
+                            </div>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    wb_twilight
+                                </span>
+                                07:19
+                            </p>
+                        </div>
+                        <div class="leftdata" style="margin-top: -2px;">
+                            <span id="leftdate">Today 28 Sep</span>
+                            <p>
+                                <span class="material-symbols-outlined">
+                                    dark_mode
+                                </span>
+                                19:32
+                            </p>
+                        </div>
+                    </div>
+                    <div id="templeft">
+                        <div>
+                            <p id="bigtemp">
+                                27°
+                            </p>
+                        </div>
+                        <div id="bigtempbelow">
+                            <span class="material-symbols-outlined">
+                                light_mode
+                            </span>
+                            <p>Sunny</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="righthead">
+                    <div class="heading">
+                        <h2>Welcome back Raj!</h2>
+                        <p>Checj out today's weather information</p>
+                    </div>
+                    <div class="profile">
+                        <i class="fas fa-ellipsis-h" id="adminopen"></i>
+                        <div class="img"><img src="raj.jpeg" alt=""></div>
+                    </div>
+                </div>
+                <div id="weathergrapgh">
+                    <div id="weathergrapgh_head">
+                        <p>Upcoming hours</p>
+                        <div id="weathergrapgh_btns">
+                            <select name="" id="select_btn">
+                                <option value="Rain precipitation">Rain precipitation</option>
+                                <option value="Humidity">Humidity</option>
+                                <option value="Wind">Wind</option>
+                                <option value="Temprature">Temprature</option>
+                            </select>
+                            <button id="next_btn">Next day &gt</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightlower">
+                    <h2>More details of today's weather</h2>
+                    <div class="detailinfocontainer">
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>Humidity</p>
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="detail">
+                                <div class="detailhead">
+                                    <h2>82%</h2>
+                                    <p>bad</p>
+                                </div>
+                                <div class="detaildata">
+                                    <div><span>good</span><span>normal</span><span>bad</span></div>
+                                    <div class="progressbox" id="progress1">
+                                        <progress value="100"></progress>
+                                        <progress value="100"></progress>
+                                        <progress value="40" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>Wind</p>
+                                <i class="fas fa-wind"></i>
+                            </div>
+
+                        </div>
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>precipitation</p>
+                                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                            </div>
+                            <div class="detail">
+                                <div class="detailhead">
+                                    <h2>1.4 cm</h2>
+                                </div>
+                                <div class="detaildata">
+                                    <div>
+                                        <span>0</span><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span><span>60</span><span>70</span><span>80</span><span>90</span>
+                                    </div>
+                                    <div class="progressbox" id="progress3">
+                                        <progress value="100" max="100"></progress>
+                                        <progress value="70" max="100"></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>UV index</p>
+                                <i class="fa-solid fa-sun"></i>
+                            </div>
+                            <div class="detail">
+                                <div class="detailhead">
+                                    <h2>4</h2>
+                                    <p>medium</p>
+                                </div>
+                                <div class="detaildata">
+                                    <div>
+                                        <span>0-2</span><span>3-5</span><span>6-7</span><span>8-10</span><span>11+</span>
+                                    </div>
+                                    <div class="progressbox" id="progress4">
+                                        <progress value="100" max="100"></progress>
+                                        <progress value="50" max="100"></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                        <progress></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>Feels like</p>
+                                <i class="fa-solid fa-temperature-half"></i>
+                            </div>
+                            <div class="detail">
+                                <div class="detailhead">
+                                    <h2>30°</h2>
+                                </div>
+                                <div class="detaildata">
+                                    <div><span>0°</span> <span>25°</span><span>50°</span></div>
+                                    <div class="progressbox" id="progress5">
+                                        <progress value="70" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailbox">
+                            <div class="detailboxhead">
+                                <p>Chance of rain</p>
+                                <i class="fa-solid fa-umbrella"></i>
+                            </div>
+                            <div class="detail">
+                                <div class="detailhead">
+                                    <h2>42%</h2>
+                                </div>
+                                <div class="detaildata">
+                                    <div><span>0%</span>
+                                        <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                                    </div>
+                                    <div class="progressbox" id="progress6">
+                                        <progress value="40" max="100"></progress>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="background">
+                <img src="left background.jpg" alt="">
+            </div>
+        </div>
+        <div id="weatheradmincontainer">
+            <div id="adminbox">
+                <div id="adminhead">
+                    <h1>welcome back! <span id="name-of">Raj</span></h1>
+                    <span class="material-symbols-outlined" id="adminclose">
+                        close
+                    </span>
+                </div>
+                <div id="adminmain">
+                    <ul id="navigation">
+                        <li><a href="">home</a></li>
+                        <li><a href="">change profile photo</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">login</a></li>
+                        <li id="theme">Dark-mode</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
